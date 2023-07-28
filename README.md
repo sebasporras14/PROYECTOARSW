@@ -74,6 +74,29 @@ una vez listo el proyecto y la base de datos, en su navegador ingrese:
 Http://LocalHost:8080
 ~~~
 
+### Como usarlo
+
+Una vez corriendo el proyecto en el navegador se va a Http://LocalHost:8080, donde entrara a una página de login que pedirá ingresar, username y contraseña, en caso de que no este registrado hay un link "sign in" que permite registrarse, esa información se guardara en la base de datos Mongo establecida y se va a redirigir a la página de login donde puede hacer nuevamente el login. 
+
+![Login Info](https://github.com/sebasporras14/PROYECTOARSW/blob/master/images/apuesta.png)
+
+Ya en el tablero este está compuesto por botones de diferentes tamaños y colores representados por un número o valor, un tablero de selección de fichas, un menú superior que muestra la información del juego como cuenta, saldo, apuesta y ganancia. Se puede seleccionar el tipo de ficha que se quiere jugar haciendo un click en la ficha y jugarla haciendo click en el número.
+
+![componentes Tablero](https://github.com/sebasporras14/PROYECTOARSW/blob/master/images/apuesta.png)
+
+Después de 30 s-50 s(primera vez) aparecerá la ruleta compuesta por botones que rotan con la imagen y una pelota que en un tiempo gira y desacelera hasta que se detiene en un número, donde se mirara quien es el número ganador(cada número tiene un botón invisible sobre él y se calcula la distancia con cada botón para determinar el más próximo y, por lo tanto, el número ganador).
+
+![Ruleta Items](httpps://github.com/sebasporras14/PROYECTOARSW/blob/master/images/apuesta.png)
+
+Una vez desaparece se calcula lo ganado de acuerdo a los números y espacios apostados, se resetea todo menos el saldo para poder hacer nuevas apuestas sucesivamente hasta que se termine el saldo o se termine la sesión(cerrando la ventana).
+
+#### Reglas de apuesta
+
+* Números de 0-36 se gana el valor apostado por 36.
+* primera, segunda y tercera docena (1st 12, 2nd 12 y 3rd 12) ganan valor apostado por 3.
+* Blanco o negro se gana el doble apostado.
+* pares, impares, 1to18, 19to36(próximamente).
+
 ## Hecho con
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [java](https://rometools.github.io/rome/) - Used to generate RSS Feeds
