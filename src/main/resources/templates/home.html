@@ -6,8 +6,7 @@
         body {
             display: flex !important;
             font-family: Arial, sans-serif;
-            background: rgb(29, 98, 7);
-            background: radial-gradient(circle, rgba(29, 98, 7, 1) 0%, rgba(18, 62, 4, 1) 14%, rgba(29, 98, 7, 1) 24%, rgba(21, 73, 4, 1) 34%, rgba(29, 98, 7, 1) 44%, rgba(21, 73, 4, 1) 56%, rgba(29, 98, 7, 1) 72%, rgba(21, 73, 4, 1) 87%, rgba(29, 98, 7, 1) 100%);
+            background: radial-gradient(circle, rgb(11, 37, 3) 0%, rgba(3, 9, 1) 14%, rgba(11, 37, 3) 24%, rgba(3, 9, 1) 34%, rgba(11, 37, 3) 44%, rgba(3, 9, 1) 56%, rgba(11, 37, 3) 72%, rgb(3, 9, 1) 87%, rgba(11, 37, 3) 100%);
             justify-content: center;
             align-items: center;
             position: relative;
@@ -27,11 +26,11 @@
 
         .container {
             background-color: #4f2b09;
-            border-radius: 10px;
+            border-radius: 20px;
             padding: 30px;
             text-align: center;
             max-width: 400px;
-            box-shadow: rgba(255, 248, 38, 0.799) 0px 5px 15px;
+            box-shadow: rgba(253, 252, 223, 0.799) 0px 5px 20px;
             border: 10px;
             border-style: solid;
             border-color: rgb(160, 120, 19);
@@ -39,7 +38,7 @@
 
         .container h1 {
             margin-bottom: 20px;
-            color: goldenrod;
+            color: rgb(218, 202, 160);
             text-shadow: 2px 2px 4px #000000;
         }
 
@@ -79,27 +78,22 @@
             color: azure;
         }
         .registro {
-            color: azure;
+            font-size: small;
+            color: rgb(12, 197, 21);
         }
     </style>
     <title>Spring Security Example </title>
 </head>
 
 <body>
-    <div class="aviso" th:if="${param.error}">
-        Invalid username and password.
-    </div>
-    <div class="aviso" th:if="${param.logout}">
-        You have been logged out.
-    </div><br>
     <div class="container" th>
-        <h1>RULETA</h1><br>
-        <form th:action="@{/login}" method="post">
+        <h1>SIGN IN</h1><br>
+        <form th:action="@{/register}" method="post">
             <div><label class="text"> Username : <input type="text" name="username" /> </label></div>
             <div><label class="text"> Password: <input type="password" name="password" /> </label></div>
-            <div><input class="boton" type="submit" value="Log in" /></div>
+            <div><input class="boton" type="submit" value="Sign in" /></div>
             <br>
-            <a class="registro" href="/home">Sign in</a>
+            <a class="registro" href="login.html">already have a user registrated</a>
         </form>
     </div>
 </body>
