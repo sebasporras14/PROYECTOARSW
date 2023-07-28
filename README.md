@@ -39,7 +39,7 @@ Esta aplicación tiene como objetivo simular el famoso juego juego de casino "ru
 | Criterios de aceptación | El programa debe poder mostrar a cada jugador la ruleta girando y mostrando el numero que caera en tiempo real.  | 
 ||El comportamiento y resultado de la ruleta debe ser igual para cada uno de los jugadores haciendo cumplir la frase "en tiempo real"|
 | mockup| ![ruleta](https://github.com/sebasporras14/PROYECTOARSW/blob/master/images/ruleta.png)|
-| Autor                   | Sebastián Porras Rozo                       | 
+| Autor                   | Sebastián Porras Rozo                       |
 
 ----
 
