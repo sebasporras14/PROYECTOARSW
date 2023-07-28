@@ -86,7 +86,7 @@ Ya en el tablero este está compuesto por botones de diferentes tamaños y color
 
 Después de 30 s-50 s(primera vez) aparecerá la ruleta compuesta por botones que rotan con la imagen y una pelota que en un tiempo gira y desacelera hasta que se detiene en un número, donde se mirara quien es el número ganador(cada número tiene un botón invisible sobre él y se calcula la distancia con cada botón para determinar el más próximo y, por lo tanto, el número ganador).
 
-![Ruleta Items](httpps://github.com/sebasporras14/PROYECTOARSW/blob/master/images/ruletaItems.png)
+![Ruleta Items](https://github.com/sebasporras14/PROYECTOARSW/blob/master/images/ruletaItems.png)
 
 Una vez desaparece se calcula lo ganado de acuerdo a los números y espacios apostados, se resetea todo menos el saldo para poder hacer nuevas apuestas sucesivamente hasta que se termine el saldo o se termine la sesión(cerrando la ventana).
 
