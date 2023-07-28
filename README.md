@@ -51,3 +51,43 @@ Esta aplicación tiene como objetivo simular el famoso juego juego de casino "ru
 ||El jugador debe recibir una retroalimentacion de la apuesta realizada en la ronda. |
 | mockup| ![apuesta](https://github.com/sebasporras14/PROYECTOARSW/blob/master/images/apuesta.png)|
 | Autor                   | Sebastián Porras Rozo                       | 
+
+## Corriendo el proyecto
+
+Una vez clonado el proyecto y generado el jar con los siguientes comandos:
+
+~~~
+git clone https://github.com/sebasporras14/PROYECTOARSW.git
+~~~
+~~~
+mvn package
+~~~
+
+se puede ejecutar con corriendo la clase: RuletaAppStarter
+
+~~~
+java -cp "./target/classes" edu.escuelaing.arsw.app.RuletaAppStarter
+~~~
+una vez listo el proyecto y la base de datos, en su navegador ingrese:
+
+~~~
+Http://LocalHost:8080
+~~~
+
+## Hecho con
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [java](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [MongoDB](https://api.mongodb.com/) DB used
+
+
+## Autor
+
+* **Sebastian Porras**
+
+### fecha
+
+07/28/2023 
+
+## Licencia
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
